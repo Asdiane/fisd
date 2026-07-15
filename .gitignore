@@ -9,7 +9,8 @@ out/
 .env
 .env.*
 !.env.example
-js/services/supabase-config.js
+
+# Required by the static deploy. This file must contain only public browser config.
 
 # Local generated folders
 .tmp-*/
