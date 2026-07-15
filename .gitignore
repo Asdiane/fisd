@@ -1,0 +1,15 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Environment files with private values
+.env
+.env.*
+!.env.example
+js/services/supabase-config.js
+
+# Local generated folders
+.tmp-*/

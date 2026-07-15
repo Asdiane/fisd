@@ -1,0 +1,132 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px clamp(18px, 4vw, 42px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+.brand-logo {
+  width: clamp(120px, 16vw, 190px);
+  height: auto;
+  max-height: 72px;
+  object-fit: contain;
+}
+
+.brand-copy strong,
+.brand-copy small {
+  display: block;
+}
+
+.brand-copy strong {
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: 950;
+}
+
+.brand-copy small {
+  color: var(--muted);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.main-nav button {
+  border: 0;
+  background: transparent;
+  color: #334155;
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: color 160ms ease;
+}
+
+.main-nav button:hover,
+.main-nav button.active {
+  color: var(--blue);
+}
+
+.reserve-btn,
+.primary-btn,
+.secondary-btn,
+.ghost-btn {
+  min-height: 46px;
+  border-radius: 14px;
+  border: 0;
+  padding: 12px 18px;
+  font-weight: 850;
+}
+
+.reserve-btn,
+.primary-btn {
+  color: white;
+  background: linear-gradient(90deg, #0000cc, var(--blue), #3785ff);
+  box-shadow: 0 14px 40px rgba(0, 0, 255, 0.24);
+}
+
+.reserve-btn {
+  position: relative;
+  overflow: hidden;
+  animation: floatBtn 2.4s ease-in-out infinite;
+}
+
+.reserve-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.32), transparent);
+  transform: translateX(-120%);
+  animation: shimmer 2.9s infinite;
+}
+
+.reserve-btn span { position: relative; z-index: 1; }
+
+.secondary-btn {
+  color: var(--blue);
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.ghost-btn {
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(12px);
+}
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: white;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 5px auto;
+  background: var(--ink);
+}
+

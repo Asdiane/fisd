@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FISD | Forum International Solidarité et Développement</title>
+  <meta name="description" content="Site du Forum International Solidarité et Développement : programmation, souvenirs, actualités, réservation et engagement.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="brand" type="button" data-page="accueil" aria-label="Accueil FISD">
+      <img class="brand-logo" src="assets/logos/logo-fisd.png" alt="Logo FISD">
+    </button>
+
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button type="button" data-page="accueil">Accueil</button>
+      <button type="button" data-page="agir">Agir avec nous</button>
+      <button type="button" data-page="programmation">Programmation</button>
+      <button type="button" data-page="galerie">Souvenirs</button>
+      <button type="button" data-page="actualites">Actualités</button>
+      <button type="button" data-page="contact">Contacts</button>
+    </nav>
+
+    <button class="reserve-btn" type="button" data-page="reservation"><span>Réserver une place</span></button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <p>&copy; 2026 FISD - Forum International Solidarité et Développement</p>
+  </footer>
+
+  <!-- Scripts classiques pour conserver la compatibilité avec file://. -->
+    <script src="js/data/site-data.js"></script>
+    <script src="js/services/supabase-config.js"></script>
+    <script src="js/services/supabase-client.js"></script>
+    <script src="js/services/data-loader.js"></script>
+    <script src="js/core/state.js"></script>
+  <script src="js/components/shared.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/engagement.js"></script>
+  <script src="js/pages/programming.js"></script>
+  <script src="js/pages/gallery.js"></script>
+  <script src="js/pages/news.js"></script>
+  <script src="js/pages/contact.js"></script>
+  <script src="js/pages/reservation.js"></script>
+  <script src="js/core/router.js"></script>
+  <script src="js/features/news-scroll.js"></script>
+  <script src="js/core/events.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

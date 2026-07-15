@@ -1,0 +1,119 @@
+@media (max-width: 1100px) {
+  .main-nav {
+    position: fixed;
+    top: 88px;
+    left: 18px;
+    right: 18px;
+    display: grid;
+    gap: 6px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: white;
+    box-shadow: var(--shadow);
+    transform: translateY(-14px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 170ms ease, transform 170ms ease;
+  }
+
+  .site-header.open .main-nav {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .main-nav button {
+    padding: 12px;
+    border-radius: 14px;
+    text-align: left;
+  }
+
+  .main-nav button:hover,
+  .main-nav button.active {
+    background: #eff6ff;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .reserve-btn {
+    display: none;
+  }
+
+  .brand-copy {
+    display: none;
+  }
+
+  .card-grid,
+  .participants-grid,
+  .partners-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .presentation-grid,
+  .two-col,
+  .engage-intro,
+  .engage-workspace,
+  .program-layout,
+  .gallery-layout,
+  .speaker-feature,
+  .reservation-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .engage-form-card {
+    position: static;
+  }
+
+  .speakers-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .site-header {
+    padding: 12px 16px;
+  }
+
+  .brand-logo {
+    width: 118px;
+    max-height: 50px;
+  }
+
+  .hero,
+  .hero-content {
+    min-height: 82vh;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .card-grid,
+  .participants-grid,
+  .speakers-gallery,
+  .partners-grid,
+  .form-grid,
+  .news-form-grid,
+  .thumb-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-item {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-photo,
+  .gallery-photo img {
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .primary-btn,
+  .secondary-btn,
+  .ghost-btn {
+    width: 100%;
+  }
+}
