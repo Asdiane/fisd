@@ -5,7 +5,7 @@ Le site fonctionne avec deux niveaux de contenu :
 - `js/data/site-data.js` garde un contenu local de secours pour que le site reste visible meme si Supabase n'est pas configure.
 - Supabase devient la source de contenu en ligne quand `js/services/supabase-config.js` est active avec l'URL du projet et la cle `anon`.
 
-Ne jamais mettre le mot de passe de la base dans le code front-end.
+
 
 ## Structure
 
